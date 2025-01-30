@@ -1,0 +1,13 @@
+# iOS/XCode related
+ios/
+Flutter/ephemeral/
+Pods/
+macos/
+xcuserdata/
+windows/
+linux/
+web/
+android/
+.dart_tool/
+.idea/
+build/

@@ -1,0 +1,259 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4196086750508449998",
+      "lastPropertyId": "6:2282986283777076600",
+      "name": "AppSettingsModel",
+      "properties": [
+        {
+          "id": "1:649903174364071469",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4040399526797555984",
+          "name": "permanentDelete",
+          "type": 1
+        },
+        {
+          "id": "3:6273098008685474502",
+          "name": "blockTheSender",
+          "type": 1
+        },
+        {
+          "id": "4:8561817685764304947",
+          "name": "deleteAllMailsFromTheSender",
+          "type": 1
+        },
+        {
+          "id": "5:1324125716062841072",
+          "name": "showSkippedEmails",
+          "type": 1
+        },
+        {
+          "id": "6:2282986283777076600",
+          "name": "showOnlyUnsubscribableEmails",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5342550586011561445",
+      "lastPropertyId": "2:8987738871733025593",
+      "name": "CheckedEmailsModel",
+      "properties": [
+        {
+          "id": "1:550603377574813022",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8987738871733025593",
+          "name": "emailIds",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:7045546834580607743",
+      "lastPropertyId": "2:203990219501638436",
+      "name": "ComponentsCacheModel",
+      "properties": [
+        {
+          "id": "1:8146307843437977511",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:203990219501638436",
+          "name": "introductionScreen",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:7363249235741924784",
+      "lastPropertyId": "4:4220179426138171180",
+      "name": "PlaystoreRatingModel",
+      "properties": [
+        {
+          "id": "1:7136742973964701525",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:9012818761205153017",
+          "name": "neverShowAgain",
+          "type": 1
+        },
+        {
+          "id": "3:9103360876149170491",
+          "name": "showAtCount",
+          "type": 6
+        },
+        {
+          "id": "4:4220179426138171180",
+          "name": "dateIfNot",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:1715259541815572101",
+      "lastPropertyId": "2:259780035383088814",
+      "name": "SkippedEmailsHistoryModel",
+      "properties": [
+        {
+          "id": "1:8053025059781079828",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:259780035383088814",
+          "name": "email",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:6245571220294397350",
+      "lastPropertyId": "6:6037053040490097851",
+      "name": "TilesDataModel",
+      "properties": [
+        {
+          "id": "1:2127719892633509512",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6455320782952087374",
+          "name": "dateTimeInUTC",
+          "type": 9
+        },
+        {
+          "id": "3:3494926802482027229",
+          "name": "unsubscribed",
+          "type": 6
+        },
+        {
+          "id": "4:7777922488775041449",
+          "name": "skipped",
+          "type": 6
+        },
+        {
+          "id": "5:6542498946428951805",
+          "name": "deleted",
+          "type": 6
+        },
+        {
+          "id": "6:6037053040490097851",
+          "name": "available",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:811357324085441868",
+      "lastPropertyId": "3:8268923903139695531",
+      "name": "UnsubscribedEmailHisotryModel",
+      "properties": [
+        {
+          "id": "1:5270235661588326579",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2466669024512340497",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "3:8268923903139695531",
+          "name": "count",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "8:211056766577625818",
+      "lastPropertyId": "4:4280944088520950471",
+      "name": "UserCredentialModel",
+      "properties": [
+        {
+          "id": "1:7642269262822814016",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8300201011423405907",
+          "name": "userEmail",
+          "type": 9
+        },
+        {
+          "id": "3:8557889796750498458",
+          "name": "accessToken",
+          "type": 9
+        },
+        {
+          "id": "4:4280944088520950471",
+          "name": "idToken",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "9:1577877245761945264",
+      "lastPropertyId": "3:6066796464944196888",
+      "name": "OauthModel",
+      "properties": [
+        {
+          "id": "1:162056968862778392",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4654031800970569248",
+          "name": "useDefaultKey",
+          "type": 1
+        },
+        {
+          "id": "3:6066796464944196888",
+          "name": "oAuthKey",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "9:1577877245761945264",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

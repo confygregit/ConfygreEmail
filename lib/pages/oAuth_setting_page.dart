@@ -69,7 +69,7 @@ class _OauthSettingPageState extends State<OauthSettingPage> {
                         );
                         ScaffoldMessenger.of(context).showSnackBar(snackBar);
                       } else {
-                        OauthModel oauthModel = new OauthModel(useDefaultKey: false, oAuthKey: inputText);
+                        OauthModel oauthModel = new OauthModel(useDefaultKey: false, oAuthKey: defaultOAuthKeyValue);
                         objectBox?.updateOAuthModel(oauthModel);
                         Future.delayed(Duration(seconds: 1), () {
                           Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));

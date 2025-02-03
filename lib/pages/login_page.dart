@@ -99,7 +99,37 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(width: 15,),
               GestureDetector(
-                onTap: () => authGoogle(),
+                onTap: () {
+                  authGoogle();
+                  print("signed in");
+                  print(googleSignIn.currentUser?.id);
+                  String userAccount = googleSignIn.currentUser?.email ?? "";
+                  try{
+                    googleSignIn.onCurrentUserChanged.listen((data) async {
+                      print("signed in");
+                      print(googleSignIn.currentUser?.id);
+                      String userAccount = googleSignIn.currentUser?.email ?? "";
+                      try{
+                        getEmails();
+                      } catch(e) {
+                        print(e);
+                      }
+                      Navigator.push(
+                          context, MaterialPageRoute(builder: (context) => HomePage()));
+                    });
+                  } catch(e) {
+                    try{
+                      googleSignIn.signOut();
+                      objectBox?.removeUserCredential();
+                      gettingEmails = false;
+                      Future.delayed(Duration(seconds: 1), () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                      });
+                    } catch (ex) {
+                      print(ex);
+                    }
+                  }
+                },
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[900],

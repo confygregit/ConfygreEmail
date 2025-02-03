@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:Confygre_Email/models/oauth_model.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:googleapis/gmail/v1.dart';
 
@@ -26,7 +27,7 @@ Future<bool> authGoogle() async {
     throw 'No Access Token found.';
   }
   if (idToken == null) {
-    throw 'No ID Token found.';
+    // throw 'No ID Token found.';
   }
 
   _userCredentialModel.accessToken = accessToken.toString();
@@ -47,7 +48,8 @@ Future<bool> authGoogle() async {
 
 GoogleSignIn signInGoole(){
   // const webClientId = '446415986013-4mg1uh7kptaodrt17rmv9mak0fv2n5hf.apps.googleusercontent.com'; //OG
-  const webClientId = '114911084189-s220mdletf8jo2rvme2q5qt9mknidkvh.apps.googleusercontent.com'; //confygre
+  OauthModel? oauthModel = objectBox?.getOAuthData();
+  String webClientId = oauthModel?.oAuthKey ?? defaultOAuthKeyValue; //confygre
 
   /// TODO: update the iOS client ID with your own.
   ///

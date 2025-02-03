@@ -63,6 +63,7 @@ String? membershipType;
 ObjectBox? objectBox;
 
 String? oAuthKeyValue;
+String defaultOAuthKeyValue = "";
 
 String getDateTimeInUTC() {
   DateTime nowUtc = DateTime.now().toUtc();

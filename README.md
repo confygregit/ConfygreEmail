@@ -35,6 +35,11 @@ To build this app, please follow the below steps
     - **Skip**: will not delete and unsubscribe. Email will added to the whitelist.
 - Some emails cannot be unsubscribed, but they can still be deleted.
 
+## Use your own oAuth
+Use the below SHA-1 and create an Android firebase project to make your own oAuth key. You can use this oAuth in the app.
+
+PackageName: com.confygre.email
+SHA-1: c2:9c:08:fe:d5:25:c2:f2:b5:e4:07:3f:39:87:62:d2:57:17:12:6a
 
 ## Have any issues?
 Please raise an issue from issue tab: [Issues](https://github.com/confygregit/ConfygreEmail/issues) or send en email to **confygre@gmail.com**

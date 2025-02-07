@@ -10,7 +10,7 @@ Confygre Email is a powerful, open source app designed to simplify your email ma
 
 
 ## Download Confygre Email App
-- You can download the app from the release page 👉[here](#)
+- You can download the app from the release page 👉[here](https://github.com/confygregit/ConfygreEmail/tags)
 - By default, there is alread an API key created using confygre@gmail.com. But it's not verified. It will show you warning message when singin in.
 - Please check the project id in the warnign prompt. It must be: ###########
 - Your own Gmail Auth API key can be added in the app if you don't want to use default API key.
